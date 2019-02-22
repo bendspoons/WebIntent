@@ -1,0 +1,25 @@
+{
+  "name": "com.borismus.webintent",
+  "version": "3.0.0",
+  "description": "WebIntent",
+  "cordova": {
+    "id": "com.borismus.webintent",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bendspoons/WebIntent.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Dominic Roesmann",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
