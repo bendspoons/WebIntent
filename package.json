@@ -16,7 +16,7 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "Dominic Roesmann",
+  "author": "Boris Smus Adapted by Dominic Roesmann",
   "license": "MIT",
   "bugs": {
     "url": ""

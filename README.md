@@ -8,10 +8,10 @@ There are two ways to install this plugin
 
 ### 1) The Command-line Interface ###
 If you used [The Command-line Interface](http://cordova.apache.org/docs/en/3.0.0/guide_cli_index.md.html) to create your Cordova/Phonegap project you only need write this command at your terminal:
-`cordova plugin add https://github.com/InQBarna/WebIntent.git`
+`cordova plugin add https://github.com/bendspoons/WebIntent.git`
 
 ### 2) Manually ###
-1. To install the plugin, move `webintent.js` to your project's `www` folder and include a reference to it in your html files. 
+1. To install the plugin, move `webintent.js` to your project's `www` folder and include a reference to it in your html files.
 2. Create the path `com/borismus/webintent` within your project's `src/` folder and move the java file into it.
 3. Add the plugin to your `res/xml/config.xml` file:
 
@@ -30,8 +30,8 @@ Launches an Android intent. For example:
 ```javascript
 CDV.WEBINTENT.startActivity({
     action: CDV.WEBINTENT.ACTION_VIEW,
-    url: 'geo:0,0?q=' + address}, 
-    function() {}, 
+    url: 'geo:0,0?q=' + address},
+    function() {},
     function() {alert('Failed to open URL via Android Intent')};
 );
 ```
@@ -40,7 +40,7 @@ CDV.WEBINTENT.startActivity({
 checks if this app was invoked with the specified extra. For example:
 
 ```javascript
-CDV.WEBINTENT.hasExtra(CDV.WEBINTENT.EXTRA_TEXT, 
+CDV.WEBINTENT.hasExtra(CDV.WEBINTENT.EXTRA_TEXT,
     function(has) {
         // has is true iff it has the extra
     }, function() {
@@ -48,12 +48,12 @@ CDV.WEBINTENT.hasExtra(CDV.WEBINTENT.EXTRA_TEXT,
     }
 );
 ```
- 
+
 ### getExtra ###
 Gets the extra that this app was invoked with. For example:
 
 ```javascript
-CDV.WEBINTENT.getExtra(CDV.WEBINTENT.EXTRA_TEXT, 
+CDV.WEBINTENT.getExtra(CDV.WEBINTENT.EXTRA_TEXT,
     function(url) {
         // url is the value of EXTRA_TEXT
     }, function() {
@@ -83,7 +83,7 @@ CDV.WEBINTENT.onNewIntent(function(url) {
     }
 });
 ```
-    
+
 ### sendBroadcast ###
 Sends a custom intent passing optional extras
 
@@ -102,7 +102,7 @@ CDV.WEBINTENT.sendBroadcast({
 
 The MIT License
 
-Copyright 
+Copyright
 (c) 2010 Boris Smus
 (C) 2013 Avi Vaisenberger
 (c) 2013 Brais Gabin
